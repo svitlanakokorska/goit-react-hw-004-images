@@ -1,7 +1,7 @@
 import css from './ImageGalleryItem.module.css';
 import PropTypes from 'prop-types';
 
-const ImageGalleryItem = ({ onImageClick, largeImageURL, webformatURL }) => {
+const ImageGalleryItem = ({ webformatURL, largeImageURL, onImageClick  }) => (
   <li className={css.galleryItem}>
     <img
       className={css.ImageGalleryItem}
@@ -9,8 +9,8 @@ const ImageGalleryItem = ({ onImageClick, largeImageURL, webformatURL }) => {
       alt=""
       onClick={() => onImageClick(largeImageURL)}
     />
-  </li>;
-};
+  </li>
+);
 
 ImageGalleryItem.propTypes = {
   webformatURL: PropTypes.string,

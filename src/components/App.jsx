@@ -12,7 +12,7 @@ import Modal from './Modal/Modal';
 const App = () => {
   const [inputValue, setInputValue] = useState('');
   const [query, setQuery] = useState('');
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState(0);
   const [images, setImages] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [lastPage, setLastPage] = useState(0);

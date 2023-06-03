@@ -2,10 +2,8 @@ import css from './ImageGallery.module.css';
 import PropTypes from 'prop-types';
 import  ImageGalleryItem  from '../ImageGalleryItem/ImageGalleryItem';
 
-
-
 const ImageGallery = ({ images, onImageClick }) => (
-  <ul className={css.gallery}>
+  <ul className={css.imageGallery}>
     {images.map(({ id, webformatURL, largeImageURL }) => (
       <ImageGalleryItem
         key={id}
@@ -17,7 +15,7 @@ const ImageGallery = ({ images, onImageClick }) => (
   </ul>
 );
 
-ImageGallery.PropTypes = {
+ImageGallery.propTypes = {
   images: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number,

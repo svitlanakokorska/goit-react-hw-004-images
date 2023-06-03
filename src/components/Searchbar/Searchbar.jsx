@@ -6,10 +6,10 @@ import ResetForm from 'components/ResetForm/ResetForm';
 
  const Searchbar = ({ onSubmit, onChange, ButtonClear, inputValue }) =>
  (
-  <header className={css.searchbar}>
-    <form className={css.form} onSubmit={onSubmit}>
-      <button type="submit" className={css.searchButton}>
-      <span className={css.searchButtonLabel}>Search</span>
+  <header className={css.searchBar}>
+    <form className={css.searchForm} onSubmit={onSubmit}>
+      <button type="submit" className={css.searchFormButton}>
+      <span className={css.searchFormButtonLabel}>Search</span>
       </button>
       <input
         className={css.searchFormInput}
